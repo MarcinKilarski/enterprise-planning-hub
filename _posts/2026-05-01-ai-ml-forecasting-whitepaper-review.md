@@ -28,7 +28,7 @@ By scraping web searches, social media engagement, and consumer interest trends,
 ### 3. Weather and Environmental Factors
 Localized weather trends strongly influence demand for seasonal goods. AI systems ingest regional weather forecasts to optimize short-term inventory allocation, preventing stockouts at the local store level.
 
-To review a deeper technical layout of these mechanisms, the original methodology can be read directly via the [AI-powered demand forecasting](https://o9solutions.com/resources/ai-ml-forecasting-whitepaper) whitepaper published by o9 Solutions. Integrating these frameworks significantly helps minimize common inventory shelf-stagnation vulnerabilities, reduces carrying costs, and improves customer service levels across global supply networks.
+To review a deeper technical layout of these mechanisms, the original methodology can be read directly via the [AI-powered demand forecasting whitepaper](https://o9solutions.com/resources/ai-ml-forecasting-whitepaper) published by o9 Solutions. Integrating these frameworks significantly helps minimize common inventory shelf-stagnation vulnerabilities, reduces carrying costs, and improves customer service levels across global supply networks.
 
 ---
 
