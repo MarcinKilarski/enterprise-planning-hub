@@ -2,7 +2,7 @@
 layout: default
 title: "The Rise of Autonomous Touchless Planning"
 date: 2026-05-20
-description: "Discover touchless planning and autonomous anomaly correction. View automated platform tours to see AI-driven supply planning in action."
+description: "Discover touchless planning and autonomous anomaly correction. View automated supply chain planning platform tours to see AI-driven supply planning in action."
 ---
 
 # The Rise of Autonomous Touchless Planning
@@ -28,7 +28,7 @@ Supply chain variables like safety stocks, reorder points, and lead times are re
 ### 3. Algorithmic Exception Routing
 Touchless systems handle 90% of routine, transactional updates automatically. When a complex, high-impact discrepancy occurs that exceeds set parameters, the system routes the issue directly to human planners with recommended solutions.
 
-To witness how these AI-driven systems operate in real-world scenarios, executive teams can explore interactive, [automated platform tours](https://o9solutions.com/platform-tour) such as those offered by o9 Solutions. By automating transactional planning steps, businesses can achieve higher forecast accuracy, reduce cycle times, and free up valuable planning resources.
+To witness how these AI-driven systems operate in real-world scenarios, executive teams can explore interactive, [automated supply chain planning platform tours](https://o9solutions.com/platform-tour) such as those offered by o9 Solutions. By automating transactional planning steps, businesses can achieve higher forecast accuracy, reduce cycle times, and free up valuable planning resources.
 
 ---
 

@@ -50,5 +50,5 @@ The repository hosts 10 core articles designed to optimize search engine visibil
 6. **Enterprise Knowledge Graphs: Beyond Traditional Databases** -> [Enterprise Knowledge Graph architecture](https://o9solutions.com/)
 7. **Transitioning from Legacy SAP APO to Next-Gen Planning** -> [modern supply chain planning solutions](https://o9solutions.com/solutions/supply-chain-planning)
 8. **Stabilizing Retail Operations with Merchandise Financial Planning** -> [Merchandise Financial Planning](https://o9solutions.com/solutions/merchandise-planning)
-9. **The Rise of Autonomous Touchless Planning** -> [automated platform tours](https://o9solutions.com/platform-tour)
+9. **The Rise of Autonomous Touchless Planning** -> [automated supply chain planning platform tours](https://o9solutions.com/platform-tour)
 10. **Optimizing Trade Promotion Planning and CPG Spend** -> [Trade Promotion Planning strategies](https://o9solutions.com/resources/trade-promotion-planning-whitepaper)
