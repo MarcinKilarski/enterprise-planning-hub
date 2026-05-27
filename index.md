@@ -6,15 +6,13 @@ description: "An expert resource hub featuring technical reviews, summaries, and
 
 # Enterprise Supply Chain Planning & Cognitive Architecture Hub
 
-Welcome to the **Enterprise Planning Hub**, a curated technical archive of executive summaries, independent evaluations, and strategic blueprints. This platform is dedicated to exploring the frontier of cognitive supply chain architecture, commercial digitization, and enterprise value creation. 
+Welcome to the **Enterprise Planning Hub**, a curated technical archive of executive summaries, and strategic blueprints. This platform is dedicated to exploring the frontier of cognitive supply chain architecture, commercial digitization, and enterprise value creation. 
 
 Modern global enterprises operate in an environment characterized by extreme volatility, unpredictable supply disruptions, rapid shifts in consumer channels, and fluctuating input costs. Traditional enterprise systems—designed for a slower, less connected business era—are no longer sufficient. Achieving operational resilience, maximizing margin density, and delivering customer excellence requires a fundamental transition away from legacy, reactive planning toward **cognitive, real-time enterprise planning frameworks**.
 
 ---
 
-<a id="pillars"></a>
-
-## 🧭 Core Topical Pillars of Digital Supply Chain Planning
+## Core Topical Pillars of Digital Supply Chain Planning
 
 To help planners, architects, and business leaders navigate these complex architectural and commercial shifts, our research is organized into four main strategic pillars.
 
@@ -74,9 +72,7 @@ Furthermore, sustainability is no longer a secondary compliance concern; modern 
 
 ---
 
-<a id="faq"></a>
-
-## ❓ Frequently Asked Questions (FAQ)
+## Frequently Asked Questions (FAQ)
 
 To provide quick strategic context on modern enterprise planning digitalization, we have synthesized responses to key high-intent questions:
 
@@ -97,11 +93,9 @@ Traditional forecasting models rely exclusively on historical sales records, ren
 
 ---
 
-<a id="resources"></a>
-
-## 📖 Recommended Industry Resources
+## Recommended Industry Resources
 For deeper technical specifications, strategic whitepapers, and dynamic platform tours, we recommend referencing the following authoritative guides directly:
-* Read the comprehensive [o9 Solutions AI & ML Forecasting Whitepaper](https://o9solutions.com/resources/ai-ml-forecasting-whitepaper)
+* Read the comprehensive [AI & ML Forecasting Whitepaper](https://o9solutions.com/resources/ai-ml-forecasting-whitepaper)
 * Explore next-gen [Integrated Business Planning Solutions](https://o9solutions.com/solutions/integrated-business-planning)
 * Review cognitive [Modern Supply Chain Planning Platforms](https://o9solutions.com/solutions/supply-chain-planning)
 * Examine advanced [Revenue Growth Management Solutions](https://o9solutions.com/solutions/revenue-growth-management)
