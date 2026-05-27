@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="nav-inner">
+      <a href="{{ '/' | relative_url }}" class="nav-brand">{{ site.title }}</a>
+      <ul class="nav-links">
+        <li><a href="{{ '/' | relative_url }}">Home</a></li>
+        <li><a href="{{ '/' | relative_url }}#pillars">Pillars</a></li>
+        <li><a href="{{ '/' | relative_url }}#faq">FAQs</a></li>
+        <li><a href="{{ '/' | relative_url }}#resources">Resources</a></li>
+        <li><a href="{{ '/blog' | relative_url }}">Blog</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="content-wrapper">
+    {% if page.date %}
+    <div class="post-hero">
+      <h1 class="post-hero__title">{{ page.title }}</h1>
+      <p class="post-hero__meta">{{ page.date | date: "%B %d, %Y" }}</p>
+    </div>
+    {% endif %}
+    <article class="{% if page.date %}post-body{% else %}page-body{% endif %}">
+      {{ content }}
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p class="footer-copy">&copy; {{ site.time | date: "%Y" }} {{ site.title }}. Independent analysis and commentary.</p>
+      <nav class="footer-nav">
+        <a href="{{ '/' | relative_url }}">Home</a>
+        <a href="{{ '/' | relative_url }}#pillars">Pillars</a>
+        <a href="{{ '/' | relative_url }}#faq">FAQs</a>
+        <a href="{{ '/' | relative_url }}#resources">Resources</a>
+      </nav>
+    </div>
+  </footer>
+
+</body>
+</html>

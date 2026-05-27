@@ -12,6 +12,8 @@ Modern global enterprises operate in an environment characterized by extreme vol
 
 ---
 
+<a id="pillars"></a>
+
 ## 🧭 Core Topical Pillars of Digital Supply Chain Planning
 
 To help planners, architects, and business leaders navigate these complex architectural and commercial shifts, our research is organized into four main strategic pillars.
@@ -72,6 +74,8 @@ Furthermore, sustainability is no longer a secondary compliance concern; modern 
 
 ---
 
+<a id="faq"></a>
+
 ## ❓ Frequently Asked Questions (FAQ)
 
 To provide quick strategic context on modern enterprise planning digitalization, we have synthesized responses to key high-intent questions:
@@ -92,6 +96,8 @@ Embedding sustainability metrics directly into the core planning engine allows c
 Traditional forecasting models rely exclusively on historical sales records, rendering them blind to sudden market disruptions. Modern demand forecasting models ingest external leading indicators—such as macroeconomic trends, weather shifts, and digital/social consumer sentiment—to anticipate demand fluctuations before they manifest, stabilizing the supply chain and minimizing stockouts.
 
 ---
+
+<a id="resources"></a>
 
 ## 📖 Recommended Industry Resources
 For deeper technical specifications, strategic whitepapers, and dynamic platform tours, we recommend referencing the following authoritative guides directly:
