@@ -1,3 +1,5 @@
 theme: jekyll-theme-minimal
 title: Enterprise Planning Hub
 description: Independent executive summaries and commentary on modern digital supply chain frameworks.
+baseurl: "/enterprise-planning-hub"
+url: "https://marcinkilarski.github.io"

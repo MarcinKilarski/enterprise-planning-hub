@@ -23,7 +23,7 @@ Through **Integrated Business Planning (IBP)**, these predictive forecasts are s
 
 {% for post in site.posts %}
   {% if post.url contains 'ai-ml-forecasting-whitepaper-review' or post.url contains 'modern-integrated-business-planning' or post.url contains 'the-rise-of-touchless-planning' %}
-* **[{{ post.title }}]({{ post.url }})** — *{{ post.date | date: "%b %d, %Y" }}*  
+* **[{{ post.title }}]({{ post.url | relative_url }})** — *{{ post.date | date: "%b %d, %Y" }}*  
   {{ post.description }}
   {% endif %}
 {% endfor %}
@@ -37,7 +37,7 @@ Transitioning to an **Enterprise Knowledge Graph (EKG)** architecture models the
 
 {% for post in site.posts %}
   {% if post.url contains 'enterprise-knowledge-graphs-explained' or post.url contains 'replacing-legacy-sap-apo-systems' %}
-* **[{{ post.title }}]({{ post.url }})** — *{{ post.date | date: "%b %d, %Y" }}*  
+* **[{{ post.title }}]({{ post.url | relative_url }})** — *{{ post.date | date: "%b %d, %Y" }}*  
   {{ post.description }}
   {% endif %}
 {% endfor %}
@@ -51,7 +51,7 @@ This ensures that promotions and price adjustments are directed toward high-marg
 
 {% for post in site.posts %}
   {% if post.url contains 'revenue-growth-management-digitalization' or post.url contains 'retail-merchandise-financial-planning' or post.url contains 'trade-promotion-planning-optimization' %}
-* **[{{ post.title }}]({{ post.url }})** — *{{ post.date | date: "%b %d, %Y" }}*  
+* **[{{ post.title }}]({{ post.url | relative_url }})** — *{{ post.date | date: "%b %d, %Y" }}*  
   {{ post.description }}
   {% endif %}
 {% endfor %}
@@ -65,7 +65,7 @@ Furthermore, sustainability is no longer a secondary compliance concern; modern 
 
 {% for post in site.posts %}
   {% if post.url contains 'supplier-collaboration-risk-mitigation' or post.url contains 'embedded-sustainability-in-supply-chains' %}
-* **[{{ post.title }}]({{ post.url }})** — *{{ post.date | date: "%b %d, %Y" }}*  
+* **[{{ post.title }}]({{ post.url | relative_url }})** — *{{ post.date | date: "%b %d, %Y" }}*  
   {{ post.description }}
   {% endif %}
 {% endfor %}
