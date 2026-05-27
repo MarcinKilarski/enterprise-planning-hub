@@ -1,0 +1,378 @@
+/* ============================================================
+   1. DESIGN TOKENS
+   ============================================================ */
+:root {
+  --bg:          #0b0f19;
+  --surface:     #0f172a;
+  --surface-2:   #1e293b;
+  --border:      rgba(99, 102, 241, 0.2);
+  --accent-from: #6366f1;
+  --accent-to:   #22d3ee;
+  --text:        #cbd5e1;
+  --text-muted:  #64748b;
+  --heading:     #f8fafc;
+  --link:        #818cf8;
+  --link-hover:  #22d3ee;
+}
+
+/* ============================================================
+   2. RESET / BASE
+   ============================================================ */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 1rem;
+  line-height: 1.75;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ============================================================
+   3. TYPOGRAPHY
+   ============================================================ */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Outfit', system-ui, sans-serif;
+  color: var(--heading);
+  line-height: 1.25;
+  font-weight: 600;
+}
+
+h1, h2 {
+  background: linear-gradient(135deg, var(--accent-from), var(--accent-to));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* h3+ solid: gradient on small strokes reduces legibility */
+h3, h4, h5, h6 {
+  color: var(--heading);
+  -webkit-text-fill-color: var(--heading);
+}
+
+h1 { font-size: clamp(1.75rem, 4vw, 2.5rem); margin-bottom: 1rem; }
+h2 { font-size: clamp(1.35rem, 3vw, 1.9rem); margin-top: 2.5rem; margin-bottom: 0.75rem; }
+h3 { font-size: 1.15rem; margin-top: 1.75rem; margin-bottom: 0.5rem; }
+
+p { margin-bottom: 1.25rem; }
+
+a {
+  color: var(--link);
+  text-decoration: underline;
+  text-decoration-color: rgba(129, 140, 248, 0.4);
+  transition: color 0.2s ease, text-decoration-color 0.2s ease;
+}
+a:hover {
+  color: var(--link-hover);
+  text-decoration-color: var(--link-hover);
+}
+
+strong { color: var(--heading); font-weight: 600; }
+
+ul, ol { padding-left: 1.5rem; margin-bottom: 1.25rem; }
+li { margin-bottom: 0.4rem; }
+
+hr {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 2.5rem 0;
+}
+
+blockquote {
+  border-left: 3px solid var(--accent-from);
+  padding: 0.75rem 1.25rem;
+  margin: 1.5rem 0;
+  background: var(--surface);
+  border-radius: 0 8px 8px 0;
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+/* ============================================================
+   4. STICKY GLASSMORPHIC HEADER
+   ============================================================ */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(15, 23, 42, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+}
+
+.nav-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  height: 64px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.nav-brand {
+  font-family: 'Outfit', system-ui, sans-serif;
+  font-weight: 700;
+  font-size: 1.05rem;
+  background: linear-gradient(135deg, var(--accent-from), var(--accent-to));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-decoration: none;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 0.25rem;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links a {
+  display: block;
+  padding: 0.4rem 0.85rem;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--text);
+  text-decoration: none;
+  transition: color 0.2s ease, background 0.2s ease;
+}
+
+.nav-links a:hover {
+  color: var(--heading);
+  background: rgba(99, 102, 241, 0.12);
+}
+
+/* ============================================================
+   5. MAIN CONTENT WRAPPER
+   ============================================================ */
+.content-wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+  flex: 1;
+  width: 100%;
+}
+
+/* ============================================================
+   6. POST HERO
+   ============================================================ */
+.post-hero {
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.post-hero__title {
+  font-family: 'Outfit', system-ui, sans-serif;
+  font-size: clamp(1.75rem, 4vw, 2.75rem);
+  font-weight: 700;
+  background: linear-gradient(135deg, var(--accent-from), var(--accent-to));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 1.2;
+  margin-bottom: 0.75rem;
+}
+
+.post-hero__meta {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+/* Hide the duplicate H1 at top of post Markdown content */
+.post-body > h1:first-child {
+  display: none;
+}
+
+/* ============================================================
+   7. HOMEPAGE PAGE-BODY — pillar post link lists as cards
+   ============================================================ */
+.page-body ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+.page-body ul li {
+  padding: 0.75rem 1rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  margin-bottom: 0.6rem;
+  transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+.page-body ul li:hover {
+  border-color: rgba(99, 102, 241, 0.45);
+  background: var(--surface-2);
+}
+
+/* Keep inline links styled normally inside cards */
+.page-body ul li a {
+  text-decoration: none;
+}
+.page-body ul li a:hover {
+  text-decoration: underline;
+}
+
+/* ============================================================
+   8. FOOTER
+   ============================================================ */
+.site-footer {
+  background: var(--surface);
+  border-top: 1px solid var(--border);
+  padding: 2rem 1.5rem;
+}
+
+.footer-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+}
+
+.footer-copy {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+.footer-nav {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer-nav a {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-nav a:hover {
+  color: var(--accent-to);
+}
+
+/* ============================================================
+   9. ARCHIVE PAGE
+   ============================================================ */
+.archive-count {
+  color: var(--text-muted);
+  font-size: 0.875rem;
+  margin-bottom: 0.5rem;
+}
+
+.archive-year {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-muted) !important;
+  -webkit-text-fill-color: var(--text-muted) !important;
+  background: none !important;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-top: 2.5rem;
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.archive-list {
+  padding-left: 0 !important;
+  list-style: none !important;
+}
+
+.archive-item {
+  display: flex;
+  gap: 1.25rem;
+  align-items: flex-start;
+  padding: 0.85rem 1rem !important;
+  background: var(--surface) !important;
+  border: 1px solid var(--border) !important;
+  border-radius: 8px !important;
+  margin-bottom: 0.5rem !important;
+  transition: border-color 0.2s ease, background 0.2s ease !important;
+}
+
+.archive-item:hover {
+  border-color: rgba(99, 102, 241, 0.45) !important;
+  background: var(--surface-2) !important;
+}
+
+.archive-date {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+  padding-top: 0.15rem;
+  min-width: 3.5rem;
+}
+
+.archive-content a {
+  font-weight: 500;
+  color: var(--heading);
+  text-decoration: none;
+  -webkit-text-fill-color: var(--heading);
+}
+
+.archive-content a:hover {
+  color: var(--link-hover);
+  -webkit-text-fill-color: var(--link-hover);
+}
+
+.archive-content p {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  margin: 0.2rem 0 0;
+}
+
+/* ============================================================
+   10. RESPONSIVE
+   ============================================================ */
+@media (max-width: 640px) {
+  .nav-inner {
+    height: auto;
+    padding: 0.75rem 1rem;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .nav-links {
+    gap: 0;
+    flex-wrap: wrap;
+  }
+
+  .nav-links a {
+    padding: 0.3rem 0.6rem;
+    font-size: 0.8rem;
+  }
+
+  .content-wrapper {
+    padding: 2rem 1rem;
+  }
+}
